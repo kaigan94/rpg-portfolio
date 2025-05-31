@@ -1,0 +1,627 @@
+/* =====================================================
+📱 Character Book – Mobile View (Base Styles)
+   Note: This file is exclusively for mobile styles.
+   All desktop styles are located in character-book.css
+===================================================== */
+
+.character-book-mobile {
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 180px 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #2b1d0e;
+  background-color: transparent;
+  background-image: url("/images/rpg-book/Mobile/book-idle-mobile-big.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 130px;
+  background-attachment: scroll;
+  position: relative;
+  z-index: 1;
+  /* Prevent background from interfering with interactive content */
+  pointer-events: none;
+}
+.character-book-mobile * {
+  pointer-events: auto;
+}
+
+/* =====================================================
+🎨 Element Styles
+===================================================== */
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.mobile-avatar {
+  width: clamp(110px, 28vw, 150px);
+  height: auto;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  border: inset 1.5px #2b1d0e;
+}
+
+.mobile-section-title {
+  font-family: "PixelMusketeer", sans-serif;
+  letter-spacing: 0.25px;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  color: #2b1d0e;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1.6px 0.15px #2b1d0e30;
+}
+
+.mobile-section-content {
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 80%;
+  padding: 0;
+  color: #2b1d0e;
+}
+
+.icon-text-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.icon-text-row img {
+  flex-shrink: 0;
+  width: 28px;
+  height: auto;
+  margin-top: 2px;
+  filter: drop-shadow(1.4px 1px 0.4px #2b1d0e68);
+}
+
+/* =====================================================
+✨ Animation Styles
+===================================================== */
+.mobile-book-page {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mobile-book-page.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================================================
+🔘 Navigation Buttons
+===================================================== */
+.arrow-button {
+  background: none;
+  border: none;
+  margin: 1rem;
+  transition: transform 0.2s ease;
+  z-index: 20;
+}
+
+.arrow-button img {
+  width: 36px;
+  height: 36px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 12rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 14.5rem;
+  z-index: 10;
+}
+
+.mobile-page-indicator {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: #2b1d0e;
+  text-shadow: 1px 1px 0 #fff8dc9e;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+/* =====================================================
+📱 Responsive Layout Tweaks
+===================================================== */
+
+/* 🟡 iPhone SE / Extra Small Devices */
+@media (max-width: 390px) and (max-height: 740px) {
+  .character-book-mobile {
+    background-position: center 72px;
+    padding-top: 182px;
+  }
+
+  .mobile-avatar {
+    width: 128px;
+    height: auto;
+    margin-bottom: 4.5rem;
+    margin-top: -4rem;
+  }
+
+  .mobile-section-title {
+    font-size: 1.32rem;
+    margin-top: -3.6rem;
+  }
+
+  .icon-text-row img {
+    width: 26px;
+    height: auto;
+  }
+
+  .mobile-section-content {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .arrow-button img {
+    width: 36px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 1.8rem;
+    gap: 11.8rem;
+  }
+
+  .mobile-page-indicator {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Samsung Galaxy S8+ (360 x 740) */
+@media (width: 360px) and (height: 740px) {
+  .fixed-bottom {
+    bottom: 7.9rem;
+    gap: 10.8rem;
+  }
+
+  .mobile-section-content {
+    font-size: 0.84rem;
+    line-height: 1.55;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .mobile-page-indicator {
+    bottom: 1.5rem;
+  }
+}
+
+/* 🟢 iPhone 12 Pro (390 x 844) */
+@media (width: 390px) and (height: 844px) {
+  .character-book-mobile {
+    background-position: center 90px;
+    padding-top: 210px;
+  }
+
+  .mobile-avatar {
+    width: 144px;
+    height: auto;
+    margin-bottom: 4.85rem;
+    margin-top: -4.5rem;
+  }
+
+  .mobile-section-title {
+    font-size: 1.5rem;
+    margin-top: -4rem;
+  }
+
+  .icon-text-row img {
+    width: 28px;
+    height: auto;
+  }
+
+  .mobile-section-content {
+    line-height: 1.65;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .arrow-button img {
+    width: 40px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 10.3rem;
+    gap: 12.2rem;
+  }
+
+  .mobile-page-indicator {
+    position: absolute;
+    bottom: 1.45rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 🔵 Normala Mobiler */
+@media (min-width: 391px) and (max-width: 768px) {
+  .character-book-mobile {
+    background-position: center 120px;
+    padding-top: 175px;
+  }
+
+  .mobile-avatar {
+    width: 160px;
+    height: auto;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+  }
+
+  .mobile-section-title {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    font-size: 1.65rem;
+  }
+
+  .mobile-section-content {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    max-width: 80%;
+  }
+
+  .arrow-button img {
+    width: 44px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 9.85rem;
+    gap: 13.6rem;
+  }
+
+  .mobile-page-indicator {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 iPhone XR (414 x 896) */
+@media (width: 414px) and (height: 896px) {
+  .fixed-bottom {
+    bottom: 9.25rem;
+    gap: 13rem;
+  }
+
+  .mobile-page-indicator {
+    bottom: 1.4rem;
+  }
+}
+
+/* 🟠 Special Devices / Surface Duo / Foldables */
+@media (min-width: 500px) and (max-width: 560px) and (max-height: 740px) {
+  .character-book-mobile {
+    background-image: url("/images/rpg-book/Mobile/book-idle-mobile-medium.png");
+    background-position: center 8px;
+    padding-top: 150px;
+    max-width: 500px;
+  }
+
+  .mobile-avatar {
+    width: 144px;
+    height: auto;
+    margin-bottom: 2.6rem;
+    margin-top: -2rem;
+  }
+
+  .mobile-section-title {
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-section-content {
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.7;
+    max-width: 70%;
+    font-size: 0.95rem;
+  }
+
+  .arrow-button img {
+    width: 32px;
+    height: auto;
+    filter: drop-shadow(0 2px 1px #2b1d0e79);
+  }
+
+  .fixed-bottom {
+    bottom: 2rem;
+    gap: 15rem;
+  }
+
+  .mobile-page-indicator {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 📘 iPad Mini (768 x 1024) */
+@media (width: 768px) and (height: 1024px) {
+  .character-book-mobile {
+    background-image: url("/images/rpg-book/Mobile/book-idle-mobile-medium.png");
+    padding: 180px 2rem 6rem;
+    background-position: center 14px;
+    max-width: 640px;
+  }
+
+  .mobile-avatar {
+    width: 228px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: -0.2rem;
+  }
+
+  .mobile-section-title {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .mobile-section-content {
+    font-size: 1.4rem;
+    line-height: 2.1;
+    max-width: 75%;
+  }
+
+  .icon-text-row img {
+    width: 38px;
+    height: auto;
+  }
+
+  .arrow-button img {
+    width: 54px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 3.8rem;
+    gap: 26.4rem;
+  }
+
+  .mobile-page-indicator {
+    bottom: 1.6rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* 🟣 Tablets / iPads */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .character-book-mobile {
+    background-image: url("/images/rpg-book/Mobile/book-idle-mobile-big.png");
+    max-width: 640px;
+    padding: 240px 2.5rem 6rem;
+    background-position: center 62px;
+    padding-top: 150px;
+  }
+
+  .mobile-avatar {
+    width: 244px;
+    height: auto;
+    margin-bottom: 4.5rem;
+    margin-top: 0rem;
+  }
+
+  .mobile-section-title {
+    font-size: 2.4rem;
+    margin-top: -3rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .mobile-section-content {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  .icon-text-row img {
+    flex-shrink: 0;
+    margin-top: 10px;
+    width: 42px;
+    height: auto;
+    gap: 0.6rem;
+  }
+
+  .arrow-button img {
+    width: 56px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 8rem;
+    gap: 24rem;
+  }
+
+  .mobile-page-indicator {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Galaxy Z Fold 5 – stängt läge (344 x 882) */
+@media (width: 344px) and (height: 882px) {
+  .character-book-mobile {
+    background-image: url("/images/rpg-book/Mobile/book-idle-mobile-big.png");
+    background-position: center 120px;
+    padding-top: 225px;
+  }
+
+  .mobile-avatar {
+    width: 120px;
+    margin-bottom: 3.6rem;
+    margin-top: -4.8rem;
+  }
+
+  .mobile-section-title {
+    font-size: 1.32rem;
+    margin-bottom: 1.2rem;
+    margin-top: -3.4rem;
+  }
+
+  .mobile-section-content {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+  }
+
+  .icon-text-row img {
+    width: 24px;
+  }
+
+  .arrow-button img {
+    width: 34px;
+    height: auto;
+  }
+
+  .fixed-bottom {
+    bottom: 16rem;
+    gap: 10rem;
+  }
+
+  .mobile-page-indicator {
+    bottom: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔴 Större Skärmar (ex: iPad Pro) */
+@media (min-width: 911px) and (max-height: 1400px) {
+  .character-book-mobile {
+    background-image: url("/images/rpg-book/Mobile/book-idle-mobile-big.png") !important;
+    padding: 250px 3.5rem 6.5rem;
+    max-width: 720px;
+    background-position: center 90px;
+    padding-top: 190px;
+  }
+
+  .mobile-avatar {
+    width: 284px;
+    height: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .mobile-section-content {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .mobile-section-title {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .icon-text-row {
+    margin-bottom: 1.2rem;
+  }
+
+  .icon-text-row img {
+    width: 40px;
+    height: auto;
+    margin-top: 4px;
+  }
+
+  .arrow-button img {
+    width: 56px;
+    height: auto;
+    filter: drop-shadow(0 2px 1px #2b1d0e79);
+  }
+
+  .fixed-bottom {
+    bottom: 4.5rem;
+    gap: 28rem;
+  }
+
+  .mobile-page-indicator {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 💻 Surface Pro 7 (912 x 1368) */
+@media (width: 912px) and (height: 1368px) {
+  .character-book-mobile {
+    max-width: 720px;
+    padding: 260px 3rem 7rem;
+    background-position: center 92px;
+    padding-top: 190px;
+  }
+
+  .mobile-avatar {
+    width: 260px;
+    height: auto;
+    margin-bottom: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .mobile-section-title {
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .mobile-section-content {
+    font-size: 1.7rem;
+    line-height: 2;
+    max-width: 75%;
+  }
+
+  .icon-text-row img {
+    height: 42px;
+    width: auto;
+  }
+
+  .arrow-button img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .fixed-bottom {
+    bottom: 4.6rem;
+    gap: 28rem;
+  }
+
+  .mobile-page-indicator {
+    bottom: 1.6rem;
+    font-size: 1.7rem;
+  }
+}
+
+/* =====================================================
+🖼️ Apply pixelated rendering to relevant elements
+===================================================== */
+.mobile-avatar,
+.icon-text-row img,
+.arrow-button img {
+  image-rendering: pixelated;
+}
+
+/* =====================================================
+💻 Desktop Styles (Handled in character-book.css)
+===================================================== */

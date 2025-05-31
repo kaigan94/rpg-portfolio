@@ -1,0 +1,42 @@
+/* =====================================================
+📥 Imports – Google Fonts
+===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* =====================================================
+🎨 Root Font Variables
+===================================================== */
+:root {
+  --font-body: "IBM Plex Mono", monospace;
+  --font-display: "KaiganText", system-ui, sans-serif;
+  --font-pixel: "PixelMusketeer", system-ui, monospace;
+  --font-special: "DungeonFont", system-ui, monospace;
+}
+
+/* =====================================================
+🔤 Custom Font Faces
+===================================================== */
+
+/* Display Font – KaiganText */
+@font-face {
+  font-family: "KaiganText";
+  src: url("/fonts/kaigan-text.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Pixel Font – PixelMusketeer */
+@font-face {
+  font-family: "PixelMusketeer";
+  src: url("/fonts/kaigan-pixel.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Special RPG Font – DungeonFont */
+@font-face {
+  font-family: "DungeonFont";
+  src: url("/fonts/dungeon-font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,167 @@
+/* === 🎮 PIXEL RPG BUTTONS === */
+
+/* 🎮 Stora knappar */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  background-color: #8b6f47; /* brun/guld */
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000, inset 0 0 0 2px #d6b679;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+}
+
+.pixel-btn:hover {
+  background-color: #b8955a;
+  box-shadow: 1px 1px 0 #000, inset 0 0 0 2px #fff3b0;
+  color: #000;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+/* 🧩 Små knappar */
+.pixel-btn-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 14px;
+  background-image: url("/images/ui/buttons/button-long.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: #fff;
+  text-shadow: 1px 1.5px 0 #2b1d0e8b;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  transition: transform 0.1s ease, filter 0.1s ease;
+  background-color: transparent;
+  height: 34px;
+  min-width: 100px;
+  box-shadow: none;
+  position: relative;
+  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+}
+
+.pixel-btn-small:hover {
+  color: #f4a13a;
+  transform: scale(1.04);
+}
+
+.pixel-btn-small:active {
+  transform: scale(0.98);
+  filter: brightness(1.15);
+}
+
+/* 🔴 Farliga knappar (radera, avbryt etc.) */
+.pixel-btn.danger {
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+.pixel-btn.danger:hover {
+  background-color: #ff4444;
+  color: #1a1a1a;
+}
+
+/* 🔗 Länk-knappstil (utan bakgrund) */
+.pixel-btn.link {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  box-shadow: none;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.pixel-btn.link:hover {
+  color: #fff;
+  text-shadow: 0 0 4px var(--accent);
+}
+
+/* 🧭 Navigation */
+.pixel-btn.nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-image: url("/images/ui/buttons/button-long.png") !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 40px;
+  font-family: var(--font-pixel);
+  font-size: 0.95rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px; /* Nytt! Hindrar text från att sticka ut */
+  transition: transform 0.1s ease;
+}
+
+/* 🟡 Golden RPGUI-style button */
+.pixel-btn-golden {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-image: url("/rpgui/img/button-golden.png") !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 42px;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: transform 0.1s ease;
+  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+}
+
+.pixel-btn-golden:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.pixel-btn-golden:active {
+  transform: scale(0.96);
+  filter: brightness(1.2);
+}
+
+.pixel-btn.nav:hover {
+  transform: scale(1.02);
+  filter: brightness(1.2);
+}
+
+.pixel-btn.nav.active {
+  filter: brightness(1.3) drop-shadow(0 0 4px var(--accent));
+}
+
+/* 🧵 Utility: Pixel rendering */
+.pixelated,
+.pixel-btn,
+.pixel-btn-small,
+.pixel-btn.nav {
+  image-rendering: pixelated;
+}

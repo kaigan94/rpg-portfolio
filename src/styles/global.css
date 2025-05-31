@@ -1,0 +1,389 @@
+@import url("./rpgui-cursors.css");
+
+/* ────────────────────────────────────────────────
+   📥 Imports
+───────────────────────────────────────────────────*/
+
+/* ────────────────────────────────────────────────
+   🎨 Färgvariabler & Typsnitt (root)
+─────────────────────────────────────────────────── */
+:root {
+  --font-display: "KaiganText", system-ui, sans-serif;
+  --font-body: "IBM Plex Mono", monospace;
+  --font-pixel: "PixelMusketeer", system-ui, monospace;
+
+  --bg: #1b1b1b;
+  --text: #f4f4f4;
+  --accent: #f4a13a;
+  --shadow: 0 0 12px var(--accent);
+
+  --page-padding: 1rem;
+  --max-content-width: 1000px;
+}
+
+/* ────────────────────────────────────────────────
+   🌍 Basinställningar för sidan
+─────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: inset 0 0 100px #00000080;
+  z-index: 1;
+}
+
+/* ────────────────────────────────────────────────
+   🖼️ RPGUI Layout
+─────────────────────────────────────────────────── */
+.rpgui-container.full-page-frame {
+  position: fixed;
+  inset: 0;
+  pointer-events: auto;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: none !important;
+}
+
+.navbar,
+.hero-section,
+.page-wrapper,
+main {
+  position: relative;
+  z-index: 9998;
+  pointer-events: auto;
+  overflow: visible;
+}
+
+.sr-card {
+  opacity: 1;
+  transform: none;
+}
+
+/* ────────────────────────────────────────────────
+   💬 Typsnittsanvändning
+─────────────────────────────────────────────────── */
+.pixel-btn,
+.rpg-navbar a,
+button {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+h1.special-hero-font {
+  font-family: var(--font-pixel);
+  text-shadow: 5px 3px 1px #000, 0 0 0 var(--accent), 5px 3px 1px #000;
+  letter-spacing: 0.08em;
+}
+
+/* ────────────────────────────────────────────────
+   🏷️ Sektionstitlar
+─────────────────────────────────────────────────── */
+.section-header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header.small {
+  width: 270px;
+  height: 88px;
+  background-size: 100% 100%;
+  background-image: url("/images/ui/borders/dragon-banner.png");
+  filter: drop-shadow(0 8px 2px #11111151);
+  margin: 6rem auto 0.7rem auto;
+}
+
+.section-header.big {
+  width: 290px;
+  height: 88px;
+  background-size: 100% 100%;
+  background-image: url("/images/ui/borders/dragon-banner.png");
+  filter: drop-shadow(0 10px 2px #11111151);
+  margin: 6.2rem auto 2rem auto;
+}
+
+.section-title {
+  font-family: var(--font-pixel);
+  font-size: 1.85rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.65rem;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-shadow: 1.2px 2px 0 #00000065;
+}
+
+@media (max-width: 768px) {
+  .section-header.small {
+    width: 240px;
+    height: 80px;
+    margin: 5rem auto 0.15rem auto;
+  }
+
+  .section-header.big {
+    width: 240px;
+    height: 78px;
+    margin: 5.4rem auto 1.5rem auto;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-header.small {
+    width: 224px;
+    height: 76px;
+    margin: 4.5rem auto 0rem auto;
+  }
+
+  .section-header.big {
+    width: 240px;
+    height: 76px;
+    margin: 4.5rem auto 0.7rem auto;
+  }
+
+  .section-title {
+    font-size: 1.55rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (width: 540px) and (height: 720px) and (orientation: portrait) {
+  .section-header.small {
+    width: 260px;
+    height: 82px;
+    margin: 0.5rem auto 0.5rem auto;
+  }
+
+  .section-header.big {
+    width: 270px;
+    height: 88px;
+    margin: 5.5rem auto 1.2rem auto;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (width: 820px) and (height: 1180px) and (orientation: portrait) {
+  .section-header.small {
+    width: 340px !important;
+    height: 110px !important;
+    margin: 6rem auto 0.6rem auto !important;
+  }
+
+  .section-header.big {
+    width: 300px !important;
+    height: 90px !important;
+    margin: 6.2rem auto 2rem auto !important;
+  }
+
+  .section-title {
+    font-size: 2.4rem !important;
+    letter-spacing: 1.2px !important;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .section-header.small {
+    width: 300px !important;
+    height: 110px !important;
+    margin: 3rem auto 1rem auto;
+  }
+
+  .section-header.big {
+    width: 280px !important;
+    height: 85px !important;
+    margin: 4.8rem auto 2rem auto !important;
+  }
+
+  .section-title {
+    font-size: 2.1rem !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 2px;
+  }
+}
+
+/* ────────────────────────────────────────────────
+   📄 Gemensam Wrapper för alla sidor
+─────────────────────────────────────────────────── */
+.page-wrapper {
+  padding: var(--page-padding);
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* ────────────────────────────────────────────────
+   🧙 Intro View
+─────────────────────────────────────────────────── */
+.intro-screen,
+.intro-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ────────────────────────────────────────────────
+   🧭 Accessibility: Focus State
+─────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+a,
+button,
+.pixel-btn,
+.pixel-btn-small,
+.rpgui-button {
+  cursor: url("/rpgui/img/cursor/cursor_point.png"), auto !important;
+}
+
+/* ────────────────────────────────────────────────
+   🧵 Utility: Pixel rendering
+─────────────────────────────────────────────────── */
+.pixelated,
+.rpgui-container.full-page-frame,
+.section-header,
+.section-header.small,
+.section-header.big {
+  image-rendering: pixelated;
+}
+
+/* ===============================================
+📱 Global Responsive Layout System
+================================================ */
+
+.fullscreen-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 🔧 Layout padding for sections */
+.hero-section,
+.projects-wrapper,
+.contact-container {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.hero-scroll,
+.project-card-frame,
+.contact-frame {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.project-card-inner > *,
+.contact-inner > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pixel-btn,
+.hero-rpgui-button,
+.pixel-btn-small {
+  max-width: 100%;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: 0.5rem 1rem;
+  image-rendering: pixelated;
+}
+
+@media (width: 540px) and (height: 720px) and (orientation: portrait) {
+  .section-header.small {
+    width: 250px;
+    height: 85px;
+    margin: 0.5rem auto 0.5rem auto;
+  }
+
+  .section-header.big {
+    width: 260px;
+    height: 85px;
+    margin: 1.1rem auto 1.85rem auto;
+  }
+
+  .section-title {
+    font-size: 1.62rem;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .section-header.small {
+    width: 310px !important;
+    height: 110px !important;
+    margin: 1.8rem auto 1rem auto !important;
+  }
+
+  .section-header.big {
+    width: 340px !important;
+    height: 110px !important;
+    margin: 2rem auto 2rem auto !important;
+  }
+
+  .section-title {
+    font-size: 2.2rem !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 2px !important;
+  }
+}
+
+@media (width: 820px) and (height: 1180px) and (orientation: portrait) {
+  .section-header.small {
+    width: 340px !important;
+    height: 110px !important;
+    margin: 6rem auto 0.6rem auto !important;
+  }
+
+  .section-header.big {
+    width: 360px !important;
+    height: 110px !important;
+    margin: 6.2rem auto 2rem auto !important;
+  }
+
+  .section-title {
+    font-size: 2.4rem !important;
+    letter-spacing: 1.2px !important;
+  }
+}

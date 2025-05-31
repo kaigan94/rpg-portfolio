@@ -1,0 +1,16 @@
+/* 🏠 Home Page Wrapper */
+.home-wrapper {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

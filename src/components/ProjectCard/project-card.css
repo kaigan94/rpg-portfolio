@@ -1,0 +1,365 @@
+/* ==============================================================
+🎮 Project Card Styles – Mobile First Layout (Base)
+================================================================ */
+
+.project-card-frame {
+  max-width: 600px;
+  width: 85%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 18px;
+  z-index: 0;
+}
+
+/* 🪧 Border Frame */
+.project-card-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 74px solid transparent;
+  border-image: url("/images/ui/borders/panel-border-144px.png") 48;
+  border-image-slice: 48;
+  border-image-repeat: stretch;
+  background-color: transparent;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 📦 Inre innehåll */
+.project-card-inner {
+  background-color: #1a1310;
+  box-shadow: inset 0 0 50px #00000066;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding: 3rem;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🏷️ Badge */
+.card-label {
+  position: absolute;
+  top: 3.2rem;
+  left: 10.95rem;
+  font-size: 0.82rem;
+  background-color: #f4a13a;
+  color: #1a1108;
+  padding: 3px 5px;
+  border: 1px solid #000;
+  font-family: var(--font-display);
+  box-shadow: 2px 2px 0 #111;
+  z-index: 3;
+}
+
+.card-label.rare {
+  background-color: #c289ff;
+  color: #1a001f;
+}
+
+.card-label.legendary {
+  background-color: #ffcc70;
+  color: #3a2a00;
+}
+
+/* 🖼️ Bild */
+.project-image-wrapper {
+  position: relative;
+  width: 66%;
+  height: 200px;
+  background-color: #0000005e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #f4a13a;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 🧱 Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-icon-img {
+  width: 26px;
+  height: auto;
+  filter: drop-shadow(1px 2px 0 #2b1d0e8b);
+  margin: 0 auto;
+  position: relative;
+}
+
+.project-title {
+  font-family: var(--font-pixel);
+  font-size: 1.45rem;
+  letter-spacing: 1.2px;
+  color: var(--accent);
+  text-transform: uppercase;
+  text-shadow: 1.5px 2px 0 #00000090;
+  margin: 0;
+  padding: 0;
+  margin-top: -3px;
+}
+
+/* 📝 Text */
+.project-description {
+  font-family: var(--font-body);
+  color: #e8d8c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-shadow: 1px 2px 0 #2b1d0e8b;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 2rem;
+  border-radius: 0;
+  max-width: 470px;
+  margin-top: 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.project-tech {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 🔧 Teknik */
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  filter: drop-shadow(0.5px 1.5px 0 #11111190);
+}
+
+/* 🎮 Knappar */
+.demo-icon {
+  width: 20px;
+  height: auto;
+  filter: drop-shadow(0.5px 1.5px 0 #11111185);
+  margin-bottom: 2px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.pixel-btn-small {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 2px 14px;
+  background-image: url("/rpgui/img/button-golden.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: var(--font-display);
+  font-size: 0.85rem !important;
+  color: #f4f4f4;
+  text-shadow: 1px 1.5px 0 #2b1d0e8b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  height: 28px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.pixel-btn-small:hover {
+  background-image: url("/rpgui/img/button-golden-hover.png");
+  color: var(--accent);
+  transform: scale(1.04);
+  transition: all 0.2s ease;
+}
+
+.pixel-btn-small:active {
+  background-image: url("/rpgui/img/button-golden-down.png");
+  transform: scale(0.98);
+  filter: brightness(1.15);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .project-card-frame {
+    max-width: 600px;
+    width: 85%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 18px;
+    z-index: 0;
+  }
+
+  .project-card-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 68px solid transparent;
+    border-image: url("/images/ui/borders/panel-border-144px.png") 48;
+    border-image-slice: 48;
+    border-image-repeat: stretch;
+    background-color: transparent;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .card-header {
+    gap: 0.6rem;
+    padding: 0.4rem 1rem;
+    margin-top: 0.2rem;
+  }
+
+  .project-card-frame {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  .project-card-inner {
+    padding: 1.6rem;
+  }
+
+  .project-image-wrapper {
+    width: 100%;
+    height: 180px;
+  }
+
+  .card-label {
+    font-size: 0.95rem;
+    padding: 2px 4px;
+    top: 2.2rem;
+    left: 2.2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 1.8rem;
+    margin-top: 1.2rem;
+  }
+
+  .project-tech {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.4rem !important;
+    margin-top: 3px;
+  }
+
+  .pixel-btn-small {
+    margin-top: 1.5rem;
+    height: 32px;
+  }
+}
+
+/* 🧵 Utility: Pixel rendering */
+.pixelated,
+.project-card-frame,
+.project-card-frame::before,
+.project-image,
+.project-icon-img,
+.demo-icon,
+.menu-icon,
+.tech-icon,
+.card-label,
+.pixel-btn-small,
+.card-header {
+  image-rendering: pixelated;
+}
+
+/* 📱 Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .project-tech {
+    max-width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+/* 📱 iPad Pro (1024px and up) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .project-image-wrapper {
+    height: 220px;
+  }
+
+  .project-title {
+    font-size: 1.92rem;
+  }
+
+  .project-description {
+    font-size: 1.42rem;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+
+  .project-tech {
+    max-width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .card-label {
+    font-size: 1.3rem;
+    top: 2.4rem;
+    left: 2.4rem;
+  }
+
+  .project-card-inner {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+
+  .project-card-frame {
+    margin-bottom: 0;
+  }
+}

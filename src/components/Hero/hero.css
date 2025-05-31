@@ -1,0 +1,293 @@
+/* ==========================================
+🏰 Hero Section – Mobile First Layout (Base)
+========================================== */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero-avatar-wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: drop-shadow(4px 8px 3px #2b1d0e5b);
+}
+
+.hero-avatar {
+  width: 130px;
+  height: auto;
+  z-index: 2;
+}
+
+.hero-scroll {
+  width: 100%;
+  min-width: 300px;
+  min-height: 100px;
+  padding: 1rem;
+  background-image: url("/images/ui/borders/banner-new.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: drop-shadow(0 6px 3px #2b1d0e5b);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-name {
+  font-family: var(--font-pixel);
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0 0;
+  text-shadow: 1.4px 2.5px 0.15px #b17d5586;
+  color: #111;
+}
+
+.hero-description {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  max-width: 90%;
+  padding: 0 0.5rem;
+  word-break: break-word;
+  color: #2b1d0e;
+}
+
+.hero-rpgui-button {
+  width: 200px;
+  height: 56px;
+  font-family: var(--font-display);
+  font-size: 0.9rem !important;
+  text-shadow: #11111162 0.5px 2.2px 0.2px;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  color: var(--text) !important;
+  cursor: pointer;
+  filter: drop-shadow(0 6px 3px #2b1d0e5b);
+  image-rendering: pixelated;
+}
+
+/* ==========================================
+🧠 Breakpoints – Progressive Enhancements
+========================================== */
+
+/* 📱 iPhone SE */
+@media (max-width: 375px) and (max-height: 667px) {
+  .hero-avatar-wrapper {
+    width: 190px;
+    height: 190px;
+    margin-bottom: 0;
+  }
+
+  .hero-avatar {
+    width: 142px;
+    margin-bottom: 1.94px;
+  }
+
+  .hero-scroll {
+    min-width: 300px;
+    min-height: 100px;
+    padding-top: 1rem;
+    padding-bottom: 2.25rem;
+    background-size: 100% 70%;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0;
+  }
+
+  .hero-description {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    max-width: 85%;
+    padding: 0 0;
+  }
+
+  .hero-rpgui-button {
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+    height: 50px;
+    font-size: 0.85rem;
+  }
+}
+
+/* 📱 iPhone 12 Pro, XR, Pixel 7 */
+@media (min-width: 390px) and (max-width: 479px) {
+  .hero-avatar-wrapper {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hero-avatar {
+    width: 172px;
+    margin-bottom: 1.94px;
+  }
+
+  .hero-scroll {
+    min-width: 350px;
+    min-height: 200px;
+    padding: 1rem;
+    background-size: 100% 94%;
+  }
+
+  .hero-name {
+    font-size: 1.75rem;
+    margin-top: 0.8rem;
+  }
+
+  .hero-description {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-rpgui-button {
+    margin-top: 2rem;
+    height: 54px;
+  }
+}
+
+/* 📱 Samsung Galaxy S8+ */
+@media (max-width: 360px) and (max-height: 740px) {
+  .hero-scroll {
+    min-width: 305px;
+    min-height: 200px;
+    padding: 1rem;
+    background-size: 100% 86%;
+  }
+
+  .hero-avatar {
+    width: 148px;
+    margin-bottom: 1.9px;
+  }
+
+  .hero-name {
+    font-size: 1.63rem;
+  }
+
+  .hero-description {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    max-width: 80%;
+  }
+
+  .hero-rpgui-button {
+    margin-bottom: 2rem;
+  }
+}
+
+/* 🟣 Tablets: iPad Mini–Air–Pro */
+@media (min-width: 480px) and (max-width: 900px) {
+  .hero-avatar-wrapper {
+    width: 270px;
+    height: 270px;
+  }
+
+  .hero-avatar {
+    width: 200px;
+    margin-bottom: 1.6px;
+  }
+
+  .hero-scroll {
+    min-width: 350px;
+    min-height: 250px;
+  }
+
+  .hero-name {
+    font-size: 2.65rem;
+  }
+
+  .hero-description {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.42rem;
+    line-height: 1.4;
+    max-width: 65%;
+  }
+
+  .hero-rpgui-button {
+    width: 260px;
+    height: 70px;
+    font-size: 1.3rem !important;
+  }
+}
+
+/* 💻 Desktop (901px+) */
+@media (min-width: 901px) {
+  .hero-avatar-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-avatar {
+    width: 194px;
+    padding-bottom: 2.32px;
+  }
+
+  .hero-scroll {
+    min-width: 300px;
+    min-height: 200px;
+    padding: 1.4rem 1rem;
+  }
+
+  .hero-name {
+    font-size: 2.26rem;
+    letter-spacing: 0.2px;
+    margin-top: 0;
+  }
+
+  .hero-description {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 40%;
+    padding: 0 0 0 0;
+  }
+
+  .hero-rpgui-button {
+    width: 220px;
+    height: 64px;
+    font-size: 1.08rem !important;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ==========================================
+🖼️ Pixel Rendering Utility
+========================================== */
+.pixelated,
+.hero-frame,
+.hero-avatar,
+.hero-scroll,
+.hero-rpgui-button {
+  image-rendering: pixelated;
+}
