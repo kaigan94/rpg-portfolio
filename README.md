@@ -24,8 +24,7 @@ I plan to:
 
 - Add animation and transitions to enhance immersion
 - Improve mobile UX and spacing on more devices
-- Create custom pixel icons and background assets
-- Build a backend for project data and character creation (possibly Spring Boot)
+- Add more custom pixel icons and background assets
 
 ## 📬 Contact
 

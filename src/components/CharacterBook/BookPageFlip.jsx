@@ -30,7 +30,7 @@ function BookPageFlip({ onFinish, direction = "right", frames, folder, baseName 
 
     frames.forEach((frame) => {
       const padded = String(frame).padStart(2, "0");
-      const src = direction === "close" ? `/images/${folder}/${baseName}-${frame}.png` : `/images/${folder}/${baseName}-${padded}.png`;
+      const src = direction === "close" ? `/images/${folder}/${baseName}-${frame}.webp` : `/images/${folder}/${baseName}-${padded}.webp`;
 
       const img = new Image();
       img.src = src;
@@ -59,7 +59,7 @@ function BookPageFlip({ onFinish, direction = "right", frames, folder, baseName 
 
   const currentFrame = frames[frameIndex];
   const padded = String(currentFrame).padStart(2, "0");
-  const imagePath = direction === "close" ? `/images/${folder}/${baseName}-${currentFrame}.png` : `/images/${folder}/${baseName}-${padded}.png`;
+  const imagePath = direction === "close" ? `/images/${folder}/${baseName}-${currentFrame}.webp` : `/images/${folder}/${baseName}-${padded}.webp`;
 
   return (
     <div className="book-flip-frame" style={{ height: "100vh", overflow: "hidden" }}>

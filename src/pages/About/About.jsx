@@ -47,7 +47,7 @@ function About() {
   useEffect(() => {
     for (let i = 1; i <= 5; i++) {
       const img = new Image();
-      img.src = `/images/rpg-book/Open/book-open-style-${i}.png`;
+      img.src = `/images/rpg-book/Open/book-open-style-${i}.webp`;
     }
 
     if (!isMobile) {
@@ -134,7 +134,7 @@ function About() {
               {displayFrame && (
                 <div className="book-opening-animation">
                   <img
-                    src={`/images/rpg-book/Open/book-open-style-${displayFrame}.png`}
+                    src={`/images/rpg-book/Open/book-open-style-${displayFrame}.webp`}
                     onError={(e) => (e.target.style.display = "none")}
                     alt="Book Animation"
                     className="book-cover-img"
@@ -144,7 +144,7 @@ function About() {
 
               {!showBook && !isOpening && !isClosing && !displayFrame && (
                 <div className="book-cover-screen">
-                  <img src="/images/rpg-book/Open/book-open-style-1.png" alt="Closed Book Cover" className="book-cover-img" />
+                  <img src="/images/rpg-book/Open/book-open-style-1.webp" alt="Closed Book Cover" className="book-cover-img" />
                   <div className="book-cover-content">
                     <h1>Nicholas Sjöstrand</h1>
                     <h2 className="book-subtitle">Frontend Developer</h2>

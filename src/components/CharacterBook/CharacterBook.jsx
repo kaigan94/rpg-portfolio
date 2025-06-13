@@ -24,7 +24,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
               <span className="character-label">Nicholas Sjöstrand</span>
             </div>
 
-            <img src="/images/nico-wizard-scaled.png" alt="Pixel Avatar" className="avatar-img" />
+            <img src="/images/nico-wizard-scaled.webp" alt="Pixel Avatar" className="avatar-img" />
 
             <div className="character-details">
               <p>
@@ -48,7 +48,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
           <div className="book-content-box quote-page right">
             <blockquote>“Crafting immersive, user-friendly worlds through code – powered by coffee, metal, curiosity and arcane magic.”</blockquote>
             <div className="rpg-row">
-              <img src="/images/coffin-man.png" alt="" />
+              <img src="/images/coffin-man.webp" alt="" />
             </div>
           </div>
         </div>
@@ -191,7 +191,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
         )
       ) : (
         <div className="book-idle">
-          <img src="/images/rpg-book/book-idle.png" alt="Open Book Background" className="book-img" />
+          <img src="/images/rpg-book/book-idle.webp" alt="Open Book Background" className="book-img" />
           <div className="book-layout">
             <div className="book-page left-page">{pages[currentPage].left}</div>
             <div className="book-page right-page">{pages[currentPage].right}</div>

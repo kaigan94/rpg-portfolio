@@ -32,7 +32,7 @@ function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <img src="/images/ui/borders/dragon-border.png" alt="Avatar Frame" className="hero-frame" />
-          <img src="/images/nico-wizard.png" alt="Avatar" className="hero-avatar" />
+          <img src="/images/nico-wizard.webp" alt="Avatar" className="hero-avatar" />
         </motion.div>
 
         {/* 📜 Name & Introduction Scroll */}
