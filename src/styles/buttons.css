@@ -15,7 +15,7 @@
   box-shadow: 2px 2px 0 #000, inset 0 0 0 2px #d6b679;
   text-decoration: none;
   transition: all 0.15s ease-in-out;
-  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+  cursor: url("/rpgui/img/cursor/point.webp") 10 0, auto !important;
 }
 
 .pixel-btn:hover {
@@ -52,7 +52,7 @@
   min-width: 100px;
   box-shadow: none;
   position: relative;
-  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+  cursor: url("/rpgui/img/cursor/point.webp") 10 0, auto !important;
 }
 
 .pixel-btn-small:hover {
@@ -121,7 +121,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background-image: url("/rpgui/img/button-golden.png") !important;
+  background-image: url("/rpgui/img/button-golden.webp") !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 160px;
@@ -136,7 +136,7 @@
   overflow: hidden;
   padding: 0 10px;
   transition: transform 0.1s ease;
-  cursor: url("/rpgui/img/cursor/cursor_point.png") 10 0, auto !important;
+  cursor: url("/rpgui/img/cursor/point.webp") 10 0, auto !important;
 }
 
 .pixel-btn-golden:hover {

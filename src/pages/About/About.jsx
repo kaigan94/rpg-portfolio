@@ -23,7 +23,7 @@ function About() {
   const [isOpening, setIsOpening] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [displayFrame, setDisplayFrame] = useState(null);
-  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/caves-bg.png");
+  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/cliff-path.webp");
 
   const openSoundRef = useRef(null);
   const closeSoundRef = useRef(null);
@@ -36,7 +36,7 @@ function About() {
   // 🖼️ Bakgrundsbild beroende på skärmstorlek
   useEffect(() => {
     const handleResize = () => {
-      setBgImage(window.innerWidth <= 1024 ? "/images/ui/backgrounds/cliff-path.png" : "/images/ui/backgrounds/cliff-path.png");
+      setBgImage(window.innerWidth <= 1024 ? "/images/ui/backgrounds/cliff-path.webp" : "/images/ui/backgrounds/cliff-path.webp");
     };
     handleResize();
     window.addEventListener("resize", handleResize);

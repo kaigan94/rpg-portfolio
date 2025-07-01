@@ -182,7 +182,7 @@
   justify-content: center;
   gap: 6px;
   padding: 2px 14px;
-  background-image: url("/rpgui/img/button-golden.png");
+  background-image: url("/rpgui/img/button-golden.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   font-family: var(--font-display);
@@ -200,14 +200,14 @@
 }
 
 .pixel-btn-small:hover {
-  background-image: url("/rpgui/img/button-golden-hover.png");
+  background-image: url("/rpgui/img/button-golden-hover.webp");
   color: var(--accent);
   transform: scale(1.04);
   transition: all 0.2s ease;
 }
 
 .pixel-btn-small:active {
-  background-image: url("/rpgui/img/button-golden-down.png");
+  background-image: url("/rpgui/img/button-golden-down.webp");
   transform: scale(0.98);
   filter: brightness(1.15);
 }
@@ -233,7 +233,7 @@
     position: absolute;
     inset: 0;
     border: 68px solid transparent;
-    border-image: url("/images/ui/borders/panel-border-144px.png") 48;
+    border-image: url("/images/ui/borders/panel-border-144px.webp") 48;
     border-image-slice: 48;
     border-image-repeat: stretch;
     background-color: transparent;

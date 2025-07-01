@@ -44,17 +44,26 @@ function BookPageFlip({ onFinish, direction = "right", frames, folder, baseName 
     if (!imagesLoaded) return;
 
     let i = 0;
-    const interval = setInterval(() => {
-      setFrameIndex(i);
-      i++;
+    let animationFrame;
+    let lastTime = performance.now();
+    const frameDelay = 75; // milliseconds per frame
 
-      if (i >= frames.length) {
-        clearInterval(interval);
-        setTimeout(onFinish, 80); // Slight delay before finishing
+    const animate = (time) => {
+      if (time - lastTime >= frameDelay) {
+        setFrameIndex(i);
+        i++;
+        lastTime = time;
       }
-    }, 75);
 
-    return () => clearInterval(interval); // Cleanup
+      if (i < frames.length) {
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setTimeout(onFinish, 80);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
   }, [imagesLoaded, direction, onFinish, frames]);
 
   const currentFrame = frames[frameIndex];

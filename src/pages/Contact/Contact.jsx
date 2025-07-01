@@ -26,12 +26,12 @@ const hoverSound = () => {
 // =====================================================
 function Contact() {
   // 🎯 State
-  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/contact-me.png");
+  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/contact-me.webp");
 
   // 🧠 Handle background image on resize
   useEffect(() => {
     const handleResize = () => {
-      setBgImage("/images/ui/backgrounds/contact-me.png");
+      setBgImage("/images/ui/backgrounds/contact-me.webp");
     };
     handleResize();
     window.addEventListener("resize", handleResize);

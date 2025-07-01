@@ -12,15 +12,15 @@ import "./projects.css";
 // =====================================================
 function Projects() {
   // 🎯 Background image state
-  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/treasure-room.png");
+  const [bgImage, setBgImage] = useState("/images/ui/backgrounds/treasure-room.webp");
 
   // 🔄 Handle responsive background
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setBgImage("/images/ui/backgrounds/treasure-room-mobile.png");
+        setBgImage("/images/ui/backgrounds/treasure-room-mobile.webp");
       } else {
-        setBgImage("/images/ui/backgrounds/treasure-room.png");
+        setBgImage("/images/ui/backgrounds/treasure-room.webp");
       }
     };
 

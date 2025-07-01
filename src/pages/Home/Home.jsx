@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       {/* 🎯 Bakgrund bakom ramen */}
-      <PixelBackground image="/images/ui/backgrounds/hero-bg.png" />
+      <PixelBackground image="/images/ui/backgrounds/hero-bg.webp" />
 
       {/* 🧱 RPGUI Yttre ram + Hero */}
       <div className="rpgui-container framed-golden-2 full-page-frame">

@@ -1,13 +1,8 @@
-/* =====================================================
-🔹 Default Cursor – För icke-interaktivt innehåll
-===================================================== */
+html,
 body {
-  cursor: url("/rpgui/img/cursor/default.png"), auto;
+  cursor: url("/rpgui/img/cursor/default.png"), auto !important;
 }
 
-/* =====================================================
-🔸 Pointer Cursor – För klickbara element
-===================================================== */
 a,
 button,
 .pixel-btn,
@@ -18,26 +13,17 @@ button,
   cursor: url("/rpgui/img/cursor/point.png"), auto !important;
 }
 
-/* =====================================================
-🖱️ Text Select Cursor – För textfält
-===================================================== */
 input[type="text"],
 textarea,
 .rpgui-cursor-select {
   cursor: url("/rpgui/img/cursor/select.png"), auto !important;
 }
 
-/* =====================================================
-✋ Grab Cursor – För dragbara element
-===================================================== */
 .grab,
 .rpgui-cursor-grab {
   cursor: url("/rpgui/img/cursor/grab-open.png"), 8 8, grab !important;
 }
 
-/* =====================================================
-✊ Grabbing Cursor – Vid aktiv dragning
-===================================================== */
 .grabbing,
 .rpgui-cursor-grabbing {
   cursor: url("/rpgui/img/cursor/grab-close.png"), 8 8, grabbing !important;

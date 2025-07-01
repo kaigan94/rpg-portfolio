@@ -106,7 +106,7 @@ h1.special-hero-font {
   width: 270px;
   height: 88px;
   background-size: 100% 100%;
-  background-image: url("/images/ui/borders/dragon-banner.png");
+  background-image: url("/images/ui/borders/dragon-banner.webp");
   filter: drop-shadow(0 8px 2px #11111151);
   margin: 6rem auto 0.7rem auto;
 }
@@ -115,7 +115,7 @@ h1.special-hero-font {
   width: 290px;
   height: 88px;
   background-size: 100% 100%;
-  background-image: url("/images/ui/borders/dragon-banner.png");
+  background-image: url("/images/ui/borders/dragon-banner.webp");
   filter: drop-shadow(0 10px 2px #11111151);
   margin: 6.2rem auto 2rem auto;
 }
@@ -271,7 +271,7 @@ button,
 .pixel-btn,
 .pixel-btn-small,
 .rpgui-button {
-  cursor: url("/rpgui/img/cursor/cursor_point.png"), auto !important;
+  cursor: url("/rpgui/img/cursor/cursor_point.webp"), auto !important;
 }
 
 /* ────────────────────────────────────────────────
