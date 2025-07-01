@@ -73,7 +73,7 @@ function Projects() {
             description="A magical counting app where you can increment, decrement, save entries, track totals, and export your data as a .txt file."
             tech="JavaScript, HTML, CSS"
             icon="/icons/scroll-open.png"
-            image="/images/previews/noctra-preview.png"
+            image="/images/previews/noctra-preview.webp"
             link="https://noctra.netlify.app/"
           />
 
@@ -82,7 +82,7 @@ function Projects() {
             description="A responsive web app that lets users search for cocktails and view detailed instructions and ingredients. Part of a school project."
             tech="JavaScript, HTML, API, Tailwind CSS"
             icon="/icons/drink.png"
-            image="/images/previews/cocktail-preview.png"
+            image="/images/previews/cocktail-preview.webp"
             link="https://kaigan-cocktail-app.netlify.app/"
           />
 
@@ -91,7 +91,7 @@ function Projects() {
             description="Drag, drop & design pixel-perfect dungeons for your party!"
             tech="React, JS, HTML, CSS"
             icon="/icons/skull.png"
-            image="/images/dungeon-mapper.png"
+            image="/images/dungeon-mapper.webp"
             link=""
             rarity="LEGENDARY"
           />

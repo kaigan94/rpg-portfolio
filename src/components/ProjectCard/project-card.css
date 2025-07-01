@@ -22,7 +22,7 @@
   position: absolute;
   inset: 0;
   border: 74px solid transparent;
-  border-image: url("/images/ui/borders/panel-border-144px.png") 48;
+  border-image: url("/images/ui/borders/panel-border-144px.webp") 48;
   border-image-slice: 48;
   border-image-repeat: stretch;
   background-color: transparent;
