@@ -47,15 +47,15 @@ function CharacterBookMobile() {
       case 0:
         return (
           <div className="mobile-book-page fade-in">
-            <img src="/images/nico-wizard-scaled.png" alt="Pixel Avatar" className="mobile-avatar" />
+            <img src="/images/nico-wizard-scaled.webp" alt="Pixel Avatar" className="mobile-avatar" />
             <h2 className="mobile-section-title">Nicholas Sjöstrand</h2>
             <div className="mobile-section-content">
               <div className="icon-text-row">
-                <img src="/icons/sweden-flag.png" alt="Origin" className="icon-inline" loading="lazy" />
+                <img src="/icons/sweden-flag.webp" alt="Origin" className="icon-inline" loading="lazy" />
                 <span>Origin: Lund, Sweden</span>
               </div>
               <div className="icon-text-row">
-                <img src="/icons/wizard-hat-2.png" alt="Class" className="icon-inline" loading="lazy" />
+                <img src="/icons/wizard-hat.png" alt="Class" className="icon-inline" loading="lazy" />
                 <span>Class: Frontend Mage</span>
               </div>
               <div className="icon-text-row">
@@ -137,11 +137,11 @@ function CharacterBookMobile() {
       {renderPage(currentPage)}
       <div className="mobile-nav-buttons fixed-bottom">
         <button onClick={goToPrev} disabled={currentPage === 0} className="arrow-button">
-          <img src="/icons/arrows/arrow-left-0.png" alt="Previous" loading="lazy" />
+          <img src="/icons/arrows/arrow-left-0.webp" alt="Previous" loading="lazy" />
         </button>
         <div className="mobile-page-indicator">Page {currentPage + 1} of 3</div>
         <button onClick={goToNext} disabled={currentPage === 2} className="arrow-button">
-          <img src="/icons/arrows/arrow-right-0.png" alt="Next" loading="lazy" />
+          <img src="/icons/arrows/arrow-right-0.webp" alt="Next" loading="lazy" />
         </button>
       </div>
     </div>

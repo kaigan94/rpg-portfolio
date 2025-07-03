@@ -87,6 +87,16 @@ function Projects() {
           />
 
           <ProjectCard
+            title="RPG Character Creator"
+            description="Create your own RPG characters with this interactive character creator. Create an account, choose your name, background, class, starting inventory and skills. Log in to save your characters."
+            tech="Java, Spring Boot, MySQL, React, JS, HTML, CSS"
+            icon="/icons/book.png"
+            image="/images/character-creator.webp"
+            link=""
+            rarity="LEGENDARY"
+          />
+
+          <ProjectCard
             title="Dungeon Mapper"
             description="Drag, drop & design pixel-perfect dungeons for your party!"
             tech="React, JS, HTML, CSS"

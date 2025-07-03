@@ -79,26 +79,34 @@ function Contact() {
               <div className="contact-panel">
                 <div className="contact-section-header">
                   <h3 className="contact-section-title">
-                    <img src="/icons/bubble.png" alt="" className="section-icon" />
+                    <img src="/icons/bubble.webp" alt="" className="section-icon" />
                     Let’s Connect
                   </h3>
                 </div>
                 <p className="contact-text">
-                  If you’ve found your way here — welcome! <br />
-                  I’m always happy to hear from curious minds, fellow devs, or anyone just stopping by.
+                  If you’ve found your way here — welcome!
+                  <br />
+                  <br />
+                  Have you checked out my character book already? If not, click the About section in the navigation bar above to see it in action!
+                  <br />
                 </p>
 
                 <div className="contact-section-header">
                   <h3 className="contact-section-title">
-                    <img src="/icons/coffee.png" alt="" className="section-icon" />
+                    <img src="/icons/coffee.webp" alt="" className="section-icon" />
                     About Me
                   </h3>
                 </div>
                 <p className="contact-text">
-                  I'm a fullstack development student based in Lund, Sweden — graduating in 2026.
+                  Hi, I'm Nicholas - a fullstack development student based in Lund, Sweden, graduating in summer 2026.
                   <br />
                   <br />
-                  I specialize in frontend and love crafting unique, immersive experiences with code and design.
+                  After many years of figuring out my true passion in life, my mind always buzzing with thoughts and ideas, I finally found my calling in coding
+                  and software development.
+                  <br />
+                  <br />
+                  In my free time, I enjoy spending time with my partner and our little dog. I also enjoy reading fantasy, playing guitar, coding, board games,
+                  video games, and love to travel and explore new places.
                   <br />
                   <br />
                   Currently open to internships or junior positions where I can contribute, grow, and level up my skills.
@@ -106,11 +114,16 @@ function Contact() {
 
                 <div className="contact-section-header">
                   <h3 className="contact-section-title">
-                    <img src="/icons/pencil.png" alt="" className="section-icon" />
-                    Reach Out
+                    <img src="/icons/pencil.webp" alt="" className="section-icon" />
+                    HOW TO REACH ME?
                   </h3>
                 </div>
-                <p className="contact-text">Click on any of the books below to contact me!</p>
+                <p className="contact-text">
+                  Below you'll find links to my LinkedIn, GitHub, and email. Feel free to reach out if you have any questions or just want to say hi.
+                  <br />
+                  <br />
+                  <img src="/icons/stars.png" alt="" className="stars-icon" /> Hope to hear from you soon!
+                </p>
               </div>
 
               {/* 🔗 Contact links */}
@@ -127,7 +140,7 @@ function Contact() {
                   <img src="/icons/book-linkedin.png" alt="LinkedIn" className="contact-icon-img" />
                   <span className="tooltip">
                     <img src="/icons/heart.png" alt="LinkedIn Icon" className="tooltip-icon" />
-                    Let’s form a professional party
+                    Let’s connect
                   </span>
                 </a>
 
@@ -152,7 +165,7 @@ function Contact() {
                   <img src="/icons/book-mail.png" alt="Email" className="contact-icon-img" />
                   <span className="tooltip">
                     <img src="/icons/quill.png" alt="Mail Me Icon" className="tooltip-icon" />
-                    Send an own or a mail
+                    Send me an owl or an email
                   </span>
                 </a>
               </div>
@@ -160,7 +173,7 @@ function Contact() {
               {/* 📄 CV Section */}
               <div className="cv-title">
                 <span>Download My CV</span>
-                <img src="/icons/arrows/arrow-yellow.png" alt="CV Icon" className="cv-title-icon" />
+                <img src="/icons/arrows/arrow-yellow.webp" alt="CV Icon" className="cv-title-icon" />
               </div>
 
               <div className="cv-downloads">

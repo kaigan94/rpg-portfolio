@@ -137,7 +137,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
           <span className="name-label">Origin & Background</span>
           <ul className="origin-list">
             <li>
-              <img src="/icons/sweden-flag.png" alt="Home Icon" className="icon-inline" loading="lazy" />
+              <img src="/icons/sweden-flag.webp" alt="Home Icon" className="icon-inline" loading="lazy" />
               Based in Lund, Sweden
             </li>
             <li>
@@ -194,13 +194,13 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
           </div>
           <div className="book-controls">
             <button className="arrow-btn left" onClick={handlePrev} disabled={currentPage === 0}>
-              <img src="/icons/arrows/arrow-left-0.png" alt="Prev" loading="lazy" />
+              <img src="/icons/arrows/arrow-left-0.webp" alt="Prev" loading="lazy" />
             </button>
             <button className="close-btn" onClick={handleClose}>
-              <img src="/icons/close-x.png" alt="Close" loading="lazy" />
+              <img src="/icons/close-x.webp" alt="Close" loading="lazy" />
             </button>
             <button className="arrow-btn right" onClick={handleNext} disabled={currentPage === 1}>
-              <img src="/icons//arrows/arrow-right-0.png" alt="Next" loading="lazy" />
+              <img src="/icons//arrows/arrow-right-0.webp" alt="Next" loading="lazy" />
             </button>
           </div>
         </div>
