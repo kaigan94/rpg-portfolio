@@ -43,7 +43,7 @@
 .hero-scroll {
   width: 100%;
   min-width: 300px;
-  min-height: 100px;
+  min-height: 200px;
   padding: 1rem;
   background-image: url("/images/ui/borders/banner-new.webp");
   background-size: contain;
@@ -151,10 +151,10 @@
   }
 
   .hero-scroll {
-    min-width: 350px;
+    min-width: 346px;
     min-height: 200px;
     padding: 1rem;
-    background-size: 100% 94%;
+    background-size: 100% 100%;
   }
 
   .hero-name {

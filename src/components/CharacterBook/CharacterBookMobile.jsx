@@ -55,7 +55,7 @@ function CharacterBookMobile() {
                 <span>Origin: Lund, Sweden</span>
               </div>
               <div className="icon-text-row">
-                <img src="/icons/wizard-hat.png" alt="Class" className="icon-inline" loading="lazy" />
+                <img src="/icons/wizard-hat-2.png" alt="Class" className="icon-inline" loading="lazy" />
                 <span>Class: Frontend Mage</span>
               </div>
               <div className="icon-text-row">

@@ -122,7 +122,7 @@ function Contact() {
                   Below you'll find links to my LinkedIn, GitHub, and email. Feel free to reach out if you have any questions or just want to say hi.
                   <br />
                   <br />
-                  <img src="/icons/stars.png" alt="" className="stars-icon" /> Hope to hear from you soon!
+                  <img src="/icons/stars.webp" alt="" className="stars-icon" /> Hope to hear from you soon!
                 </p>
               </div>
 
