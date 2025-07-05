@@ -47,11 +47,11 @@ function CharacterBookMobile() {
       case 0:
         return (
           <div className="mobile-book-page fade-in">
-            <img src="/images/nico-wizard-scaled.webp" alt="Pixel Avatar" className="mobile-avatar" />
+            <img src="/images/nico-wizard-scaled.webp" alt="Pixel Avatar" className="mobile-avatar" loading="lazy" />
             <h2 className="mobile-section-title">Nicholas Sjöstrand</h2>
             <div className="mobile-section-content">
               <div className="icon-text-row">
-                <img src="/icons/sweden-flag.webp" alt="Origin" className="icon-inline" loading="lazy" />
+                <img src="/icons/sweden-shield.png" alt="Origin" className="icon-inline" loading="lazy" />
                 <span>Origin: Lund, Sweden</span>
               </div>
               <div className="icon-text-row">
@@ -75,7 +75,7 @@ function CharacterBookMobile() {
             <h2 className="mobile-section-title">Skills & Abilities</h2>
             <div className="mobile-section-content">
               <div className="icon-text-row">
-                <img src="/icons/lightning-2.png" alt="Frontend" className="icon-inline" loading="lazy" />
+                <img src="/icons/star.png" alt="Frontend" className="icon-inline" loading="lazy" />
                 <span>HTML, CSS, JavaScript, React</span>
               </div>
               <div className="icon-text-row">

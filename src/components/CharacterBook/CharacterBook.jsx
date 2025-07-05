@@ -107,7 +107,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
           <span className="name-label">Skills & Abilities</span>
           <ul className="skills-list">
             <li>
-              <img src="/icons/lightning-2.png" alt="" className="icon-inline" loading="lazy" />
+              <img src="/icons/star.png" alt="" className="icon-inline" loading="lazy" />
               Frontend Magic: HTML, CSS, JavaScript, React
             </li>
             <li>
@@ -137,7 +137,7 @@ function CharacterBook({ onClose, playCloseSound, playFlipSound }) {
           <span className="name-label">Origin & Background</span>
           <ul className="origin-list">
             <li>
-              <img src="/icons/sweden-flag.webp" alt="Home Icon" className="icon-inline" loading="lazy" />
+              <img src="/icons/sweden-shield.png" alt="Home Icon" className="icon-inline" loading="lazy" />
               Based in Lund, Sweden
             </li>
             <li>

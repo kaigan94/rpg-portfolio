@@ -11,10 +11,10 @@ import "./projects.css";
 // 🧩 Projects Component
 // =====================================================
 function Projects() {
-  // 🎯 Background image state
+  // Background image state
   const [bgImage, setBgImage] = useState("/images/ui/backgrounds/treasure-room.webp");
 
-  // 🔄 Handle responsive background
+  // Handle responsive background
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
@@ -29,7 +29,7 @@ function Projects() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 🔮 ScrollReveal animations
+  // ScrollReveal animations
   useEffect(() => {
     ScrollReveal().reveal(".section-header", {
       origin: "top",
@@ -58,10 +58,10 @@ function Projects() {
     <div className="page projects-page">
       <PixelBackground image={bgImage} />
 
-      {/* 🟡 RAMEN ska ligga separat! */}
+      {/* RAMEN ska ligga separat! */}
       <div className="rpgui-container framed-golden-2 full-page-frame" />
 
-      {/* 🟢 Innehållet som scrollas */}
+      {/* Innehållet som scrollas */}
       <div className="scroll-content-area">
         <div className="page-wrapper projects-wrapper">
           <div className="section-header small">

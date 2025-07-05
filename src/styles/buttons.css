@@ -111,7 +111,7 @@
   border: none;
   position: relative;
   overflow: hidden;
-  padding: 0 10px; /* Nytt! Hindrar text från att sticka ut */
+  padding: 0 10px;
   transition: transform 0.1s ease;
 }
 

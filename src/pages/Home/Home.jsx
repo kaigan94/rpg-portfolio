@@ -8,13 +8,14 @@ import PixelBackground from "../../components/PixelBackground/PixelBackground";
 // =====================================================
 // 🎮 Home Component
 // =====================================================
+
 function Home() {
   return (
     <>
-      {/* 🎯 Bakgrund bakom ramen */}
+      {/* Bakgrund bakom ramen */}
       <PixelBackground image="/images/ui/backgrounds/hero-bg.webp" />
 
-      {/* 🧱 RPGUI Yttre ram + Hero */}
+      {/* RPGUI Yttre ram + Hero */}
       <div className="rpgui-container framed-golden-2 full-page-frame">
         <main className="home-wrapper">
           <Hero />

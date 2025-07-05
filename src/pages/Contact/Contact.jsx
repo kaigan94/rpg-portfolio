@@ -137,9 +137,9 @@ function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/book-linkedin.png" alt="LinkedIn" className="contact-icon-img" />
+                  <img src="/icons/book-linkedin.png" alt="LinkedIn" className="contact-icon-img" loading="lazy" />
                   <span className="tooltip">
-                    <img src="/icons/heart.png" alt="LinkedIn Icon" className="tooltip-icon" />
+                    <img src="/icons/heart.png" alt="LinkedIn Icon" className="tooltip-icon" loading="lazy" />
                     Let’s connect
                   </span>
                 </a>
@@ -153,18 +153,18 @@ function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/book-github.png" alt="GitHub" className="contact-icon-img" />
+                  <img src="/icons/book-github.png" alt="GitHub" className="contact-icon-img" loading="lazy" />
                   <span className="tooltip">
-                    <img src="/icons/bag.png" alt="Code Inventory Icon" className="tooltip-icon" />
+                    <img src="/icons/bag.png" alt="Code Inventory Icon" className="tooltip-icon" loading="lazy" />
                     Explore my code inventory
                   </span>
                 </a>
 
                 {/* Mail */}
                 <a href="mailto:kaigan.codes@gmail.com" className="tooltip-wrapper mail-link" onClick={playClickSound} onMouseEnter={hoverSound}>
-                  <img src="/icons/book-mail.png" alt="Email" className="contact-icon-img" />
+                  <img src="/icons/book-mail.png" alt="Email" className="contact-icon-img" loading="lazy" />
                   <span className="tooltip">
-                    <img src="/icons/quill.png" alt="Mail Me Icon" className="tooltip-icon" />
+                    <img src="/icons/quill.png" alt="Mail Me Icon" className="tooltip-icon" loading="lazy" />
                     Send me an owl or an email
                   </span>
                 </a>
@@ -173,18 +173,18 @@ function Contact() {
               {/* 📄 CV Section */}
               <div className="cv-title">
                 <span>Download My CV</span>
-                <img src="/icons/arrows/arrow-yellow.webp" alt="CV Icon" className="cv-title-icon" />
+                <img src="/icons/arrows/arrow-yellow.webp" alt="CV Icon" className="cv-title-icon" loading="lazy" />
               </div>
 
               <div className="cv-downloads">
                 <div className="cv-icon-group">
-                  <img src="/icons/flag-swe.png" alt="Swedish Flag" className="cv-flag" />
+                  <img src="/icons/flag-swe.png" alt="Swedish Flag" className="cv-flag" loading="lazy" />
                   <a href="/pdf/Nicholas-S-CV-SWE.pdf" download onClick={playClickSound} onMouseEnter={hoverSound} className="cv-icon-link">
                     Download in Swedish
                   </a>
                 </div>
                 <div className="cv-icon-group">
-                  <img src="/icons/flag-uk.png" alt="UK Flag" className="cv-flag" />
+                  <img src="/icons/flag-uk.png" alt="UK Flag" className="cv-flag" loading="lazy" />
                   <a href="/pdf/Nicholas-S-CV-ENG.pdf" download onClick={playClickSound} onMouseEnter={hoverSound} className="cv-icon-link">
                     Download in English
                   </a>

@@ -32,14 +32,14 @@ function ProjectCard({ image, title, description, tech, icon, link, rarity = "RA
 
           {/* ⚙️ Tech */}
           <p className="project-tech">
-            <img src="/icons/cog.png" alt="Tech Icon" className="tech-icon" />
+            <img src="/icons/cog.png" alt="Tech Icon" className="tech-icon" loading="lazy" />
             {tech}
           </p>
 
           {/* 🔗 Link Button */}
           {link && (
             <a href={link} target="_blank" rel="noopener noreferrer" className="pixel-btn-small" onClick={playClickSound}>
-              <img src="/icons/mag-glass.png" alt="Demo Icon" className="demo-icon" />
+              <img src="/icons/mag-glass.png" alt="Demo Icon" className="demo-icon" loading="lazy" />
               <span>Live Demo</span>
             </a>
           )}

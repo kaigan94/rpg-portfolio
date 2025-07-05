@@ -71,13 +71,13 @@ function RPGNavbar() {
         <ul className="nav-links">
           <li>
             <NavLink to="/" onClick={() => handleNavigate("/")} className={({ isActive }) => `rpgui-button nav-btn ${isActive ? "active" : ""}`}>
-              <img src="/icons/rune.png" alt="Home" className="nav-icon" />
+              <img src="/icons/rune.png" alt="Home" className="nav-icon" loading="lazy" />
               Home
             </NavLink>
           </li>
           <li>
             <NavLink to="/about" onClick={() => handleNavigate("/about")} className={({ isActive }) => `rpgui-button nav-btn ${isActive ? "active" : ""}`}>
-              <img src="/icons/q-mark.png" alt="About" className="nav-icon" />
+              <img src="/icons/q-mark.png" alt="About" className="nav-icon" loading="lazy" />
               About
             </NavLink>
           </li>
@@ -87,13 +87,13 @@ function RPGNavbar() {
               onClick={() => handleNavigate("/projects")}
               className={({ isActive }) => `rpgui-button nav-btn ${isActive ? "active" : ""}`}
             >
-              <img src="/icons/pouch.png" alt="Projects" className="nav-icon" />
+              <img src="/icons/pouch.png" alt="Projects" className="nav-icon" loading="lazy" />
               Projects
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" onClick={() => handleNavigate("/contact")} className={({ isActive }) => `rpgui-button nav-btn ${isActive ? "active" : ""}`}>
-              <img src="/icons/letter.png" alt="Contact" className="nav-icon" />
+              <img src="/icons/letter.png" alt="Contact" className="nav-icon" loading="lazy" />
               Contact
             </NavLink>
           </li>
