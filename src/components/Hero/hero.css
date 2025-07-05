@@ -94,9 +94,7 @@
 /* ==========================================
 🧠 Breakpoints – Progressive Enhancements
 ========================================== */
-
-/* 📱 iPhone SE */
-@media (max-width: 375px) and (max-height: 667px) {
+@media (max-width: 375px) and (max-height: 882px) {
   .hero-avatar-wrapper {
     width: 190px;
     height: 190px;
@@ -190,6 +188,7 @@
 
   .hero-name {
     font-size: 1.63rem;
+    margin-top: 0.2rem;
   }
 
   .hero-description {
