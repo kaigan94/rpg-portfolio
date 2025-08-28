@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 // =====================================================
 function Hero() {
   const navigate = useNavigate();
-
   const handleClick = () => {
     playClickSound();
     navigate("/about");
@@ -25,15 +24,10 @@ function Hero() {
     <div className="no-scroll-wrapper">
       <section className="hero-section">
         {/* 🧙‍♂️ Avatar + Frame */}
-        <motion.div
-          className="hero-avatar-wrapper"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+        <div className="hero-avatar-wrapper" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }}>
           <img src="/images/ui/borders/dragon-border.webp" alt="Avatar Frame" className="hero-frame" loading="lazy" />
           <img src="/images/nico-wizard.webp" alt="Avatar" className="hero-avatar" loading="lazy" />
-        </motion.div>
+        </div>
 
         {/* 📜 Name & Introduction Scroll */}
         <motion.div
